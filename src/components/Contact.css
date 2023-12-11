@@ -1,0 +1,60 @@
+.contact-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.img {
+    width: 100%; /* 图片宽度为容器宽度 */
+    height: auto; /* 高度自动调整以保持比例 */
+    min-height: 100vh;
+}
+
+.topic {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 3.5vw; /* 使用视口宽度单位 */
+    font-weight: 700;
+    font-style: italic;
+    z-index: 10;
+}
+
+.details-container {
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 3vw; /* 使用视口宽度单位 */
+    font-weight: 700;
+    font-style: italic;
+}
+
+.detail {
+    font-size: 0.7em;
+    margin-bottom: 1em; /* 使用 em 单位来确定间距 */
+}
+
+/* 媒体查询 - 针对不同屏幕尺寸进行调整 */
+@media screen and (max-width: 768px) {
+    .topic {
+        font-size: 5vw; /* 在较小屏幕上减小字体大小 */
+    }
+
+    .details-container {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .topic {
+        font-size: 8vw; /* 在更小屏幕上进一步减小字体大小 */
+    }
+
+    .details-container {
+        font-size: 6vw;
+    }
+}

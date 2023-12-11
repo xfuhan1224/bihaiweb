@@ -1,0 +1,50 @@
+/* Intro.css */
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 2%; /* 使用百分比来代替固定像素值 */
+    background-color: #D9D9D9;
+    font-family: Arial, sans-serif;
+}
+
+.intro-left {
+    flex: 1.3;
+    padding: 2%; /* 使用百分比来代替固定像素值 */
+}
+
+.intro-right {
+    margin-top: 2%; /* 使用百分比来代替固定像素值 */
+    margin-right: 5%;
+    flex: 2.5;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 70%;
+}
+
+.intro-left img {
+    max-width: 60%; /* 使用百分比来代替固定像素值 */
+    object-fit: cover;
+    border-radius: 5%; /* 使用百分比来代替固定像素值 */
+    margin-left: 20%; /* 使用百分比来代替固定像素值 */
+}
+
+.intro-right .topic {
+    text-align: center;
+    font-size: 3vw; /* 使用vw单位，根据视口宽度来自动调整字体大小 */
+    font-weight: bold;
+    color: #1a1a1a;
+    font-style: italic;
+}
+
+.intro-right .intro-content .part1,
+.intro-right .intro-content .part2 {
+    font-size: 1.8vw; /* 使用vw单位，根据视口宽度来自动调整字体大小 */
+    line-height: 1.6;
+    font-weight: 400;
+    text-align: justify;
+    color: black;
+    margin-top: 2%;
+}
